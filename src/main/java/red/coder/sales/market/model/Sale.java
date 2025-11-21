@@ -2,6 +2,7 @@ package red.coder.sales.market.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -31,6 +32,6 @@ public class Sale {
     private Branch branch;
 
     @OneToMany(mappedBy = "sale")
-    private List<Details> details;
+    private List<Details> details = new ArrayList<>();
 
 }

@@ -1,5 +1,6 @@
 package red.coder.sales.market.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.persistence.Entity;
@@ -25,6 +26,6 @@ public class Branch {
     private String address;
 
     @OneToMany(mappedBy = "branch")
-    private List<Sale> sales;
+    private List<Sale> sales = new ArrayList<>();
 
 }
