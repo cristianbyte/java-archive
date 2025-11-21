@@ -34,3 +34,4 @@ build/
 
 ### VS Code ###
 .vscode/
+target/classes/red/coder/sales/market/model/Branch.class
